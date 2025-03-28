@@ -122,6 +122,27 @@ img {
     padding: 10;
 }
 
+.outer-span {
+    display: inline-block; /* Keeps the span's width restricted to content */
+    padding: 10px; /* Optional: Adjust as needed */
+}
+
+/*Initially hide the paragraph*/
+.outer-span p:last-of-type {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+}
+
+/* When hovering over .outer-div, show the paragraph */
+.outer-span:hover p:last-of-type {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+} 
+
+
 section {
     display: flex;
     align-items: center;
