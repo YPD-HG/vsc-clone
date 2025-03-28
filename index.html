@@ -1,0 +1,63 @@
+<html>
+<title>
+    Visual Studio Code - Code Editor
+</title>
+<link rel="stylesheet" href="index.css">
+
+</html>
+
+<body>
+    <div style="display: flex; justify-content: space-between;">
+        <div>
+            <span class="NavBar" style="color: #c3d0e5;"><img class="icon"
+                    src="https://code.visualstudio.com/assets/favicon.ico" alt="icon" width="20">Visual Studio
+                Code</span>
+            <span class="NavBar"><a class="links" href="/">Docs</a></span></span>
+            <span class="NavBar"><a class="links" href="/">Updates</a></span></span>
+            <span class="NavBar"><a class="links" href="/">Blog</a></span></span>
+            <span class="NavBar"><a class="links" href="/">API</a></span></span>
+            <span class="NavBar"><a class="links" href="/">Extensions</a></span>
+            <span class="NavBar"><a class="links" href="/">FAQs</a></span>
+            <span class="NavBar"><a class="links" href="/">GitHub Copilot</a></span>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Search Docs">
+            <button>Download</button>
+        </div>
+
+    </div>
+    <br />
+    <input type="checkbox" id="close-banner" class="hide-checkbox">
+    <div id="banner" class="copilot-text">
+        <span class=" icon">🚀</span>Get<a href="/">GitHub Copilot Free</a>in VS Code!
+        <!-- Placing the input inside `#banner` removes it from the render tree when `display: none;` is applied,
+        causing the browser to forget its checked state and preventing the `:checked` selector from controlling
+        `#banner` properly. -->
+        <label for="close-banner" class="close">✖</label>
+        <!-- Note that the input checkbox is associated with label, how? for label to get
+        associated with anything, the for of the label should contain the id of the target
+        element with whom we want label to be binded with. -->
+        <!-- Now, when we press ✖, the input element get triggered, Clicking the label (✖) is
+        the same as clicking the checkbox. -->
+        <!-- And once the checkbox is checked, we see the corresponding CSS,  -->
+    </div>
+    <section>
+        <div>
+            <h1>Your code editor. Redefined with AI.</h1>
+            <div>
+                <div>
+                    Download for MacOs and get copilot for free
+                </div>
+                <p>
+                    Web, Insiders edition, or other platforms
+                </p>
+                <p>
+                    By using VS Code, you agree to its license and privacy statement.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <br />
+</body>
