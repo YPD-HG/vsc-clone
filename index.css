@@ -6,14 +6,17 @@ a {
 
 body {
     background-color: #0D1117;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+
 }
 
 button:focus {
-    outline: 2px solid #0078d4; /* Custom focus indicator */
+    outline: 2px solid #0078d4;
+    /* Custom focus indicator */
     border-radius: 4px;
 }
 
-#center-content{
+#center-content {
     font-size: 72px;
     max-width: 1000px;
     text-wrap: balance;
@@ -37,44 +40,23 @@ button:focus {
     color: #fff;
     /* Highlight on hover */
 }
+
 .container {
-    max-width: 100%;  /* Controls width */
-    margin: 0;  /* Centers everything */
+    max-width: 100%;
+    /* Controls width */
+    margin: 0;
+    /* Centers everything */
 }
-
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    max-width: 1000px; /* Ensures both sections are the same width */
-    margin: 0 auto; /* Centers content horizontally */
-}
-
-.hero-text,
-.hero-video {
-    width: 100%; /* Makes both sections identical in width */
-}
-
-.hero-text {
-    padding-bottom: 20px; /* Adds spacing before video */
-}
-
-.hero-video video {
-    width: 100%;
-    height: auto; /* Maintains aspect ratio */
-}
-
-
 
 .copilot-btn {
     background-color: #25292E;
-    color: #c3d0e5; /* Light grayish-blue text */
+    color: #c3d0e5;
+    /* Light grayish-blue text */
     font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
-    border: 1px solid #c3d0e5; /* Border matching text color */
+    border: 1px solid #c3d0e5;
+    /* Border matching text color */
     border-radius: 6px;
     cursor: pointer;
     outline: none;
@@ -83,7 +65,8 @@ button:focus {
 
 .copilot-btn:hover {
     background-color: #c3d0e5;
-    color: #0D1117; /* Dark background for contrast */
+    color: #0D1117;
+    /* Dark background for contrast */
 }
 
 .copilot-text {
@@ -111,7 +94,8 @@ div {
 }
 
 .download-btn {
-    background-color: #0078D4; /* VS Code blue */
+    background-color: #0078D4;
+    /* VS Code blue */
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -124,7 +108,8 @@ div {
 }
 
 .download-btn:hover {
-    background-color: #005ea6; /* Darker blue on hover */
+    background-color: #005ea6;
+    /* Darker blue on hover */
 }
 
 .hide-checkbox {
@@ -149,13 +134,20 @@ img {
     color: #9ba3b4;
 }
 
+.Nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Navbar {
     padding: 10;
 }
 
 .outer-span {
-    display: inline-block; /* Keeps the span's width restricted to content */
-    padding: 10px; /* Optional: Adjust as needed */
+    display: inline-block;
+    /* Keeps the span's width restricted to content */
+    padding: 10px;
+    /* Optional: Adjust as needed */
 }
 
 /*Initially hide the paragraph*/
@@ -171,7 +163,7 @@ img {
     opacity: 1;
     visibility: visible;
     display: block;
-} 
+}
 
 
 section {
@@ -180,11 +172,50 @@ section {
     align-items: center;
     justify-content: center;
     color: #c3d0e5;
-    min-height: 50vh; /* Full viewport height */
-    text-align: center; /* Center text */
+    min-height: 50vh;
+    /* Full viewport height */
+    text-align: center;
+    /* Center text */
 }
 
 span {
     padding: 2px 5px;
     /* Adds slight padding around text */
+}
+
+/*Hero Containers*/
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    /* Ensures both sections are the same width */
+    margin: 0 auto;
+    /* Centers content horizontally */
+}
+
+.hero-section {
+    width: 1240;
+    height: 833;
+    border-radius: 24px;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    /* Adjust based on need */
+    background: url('https://code.visualstudio.com/assets/home/hero-background.webp') no-repeat center center/cover;
+}
+
+.hero-text,
+.hero-video {
+    width: 100%;
+    /* Makes both sections identical in width */
+}
+
+.hero-text {
+    padding-bottom: 20px;
+    /* Adds spacing before video */
 }
