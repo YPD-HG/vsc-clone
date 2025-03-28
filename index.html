@@ -12,7 +12,7 @@
             <div>
                 <span class="NavBar" style="color: #c3d0e5;">
                     <img class="icon" src="https://code.visualstudio.com/assets/favicon.ico" alt="icon" width="20">
-                   <b>Visual Studio Code</b>
+                    <b>Visual Studio Code</b>
                 </span>
                 <span class="NavBar"><a class="links" href="/">Docs</a></span>
                 <span class="NavBar"><a class="links" href="/">Updates</a></span>
@@ -30,11 +30,14 @@
         </div>
 
         <br />
-        
+
         <input type="checkbox" id="close-banner" class="hide-checkbox">
         <div id="banner" class="copilot-text">
-            🚀 Get<a href="/">GitHub Copilot Free</a> in VS Code!
-            <label for="close-banner" class="close">✖</label>
+            <span></span> <!-- Created this so that i can use flex's justify content's space between, since we need three element for that -->
+            <span>
+                🚀 Get<a href="/">GitHub Copilot Free</a> in VS Code!
+            </span>
+            <label for="close-banner" class="close">&#10005;</label>
         </div>
 
         <section class="hero-container">
@@ -61,8 +64,8 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
+
         </section>
-        
+
     </div>
 </body>
