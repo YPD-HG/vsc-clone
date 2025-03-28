@@ -31,24 +31,18 @@
     <input type="checkbox" id="close-banner" class="hide-checkbox">
     <div id="banner" class="copilot-text">
         <span class=" icon">🚀</span>Get<a href="/">GitHub Copilot Free</a>in VS Code!
-        <!-- Placing the input inside `#banner` removes it from the render tree when `display: none;` is applied,
-        causing the browser to forget its checked state and preventing the `:checked` selector from controlling
-        `#banner` properly. -->
         <label for="close-banner" class="close">✖</label>
-        <!-- Note that the input checkbox is associated with label, how? for label to get
-        associated with anything, the for of the label should contain the id of the target
-        element with whom we want label to be binded with. -->
-        <!-- Now, when we press ✖, the input element get triggered, Clicking the label (✖) is
-        the same as clicking the checkbox. -->
-        <!-- And once the checkbox is checked, we see the corresponding CSS,  -->
     </div>
     <section>
         <div>
             <h1>Your code editor. Redefined with AI.</h1>
             <div>
-                <div>
-                    Download for MacOs and get copilot for free
-                </div>
+                <span>
+                    Download for MacOS
+                </span>
+                <span>
+                    Get Copilot Free
+                </span>
                 <p>
                     Web, Insiders edition, or other platforms
                 </p>

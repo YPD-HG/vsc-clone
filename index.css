@@ -9,16 +9,19 @@ body {
 
 .close {
     cursor: pointer;
-    margin-left: 10px; /* Space between text and cross */
+    margin-left: 10px;
+    /* Space between text and cross */
     color: #9ba3b4;
 }
 
-#close-banner:checked + #banner {
-    display: none; /* Hide banner when checkbox is checked */
+#close-banner:checked+#banner {
+    visibility: hidden;
+    /* Hide banner when checkbox is checked */
 }
 
 .close:hover {
-    color: #fff; /* Highlight on hover */
+    color: #fff;
+    /* Highlight on hover */
 }
 
 .copilot-text {
@@ -46,7 +49,8 @@ div {
 }
 
 .hide-checkbox {
-    display: none; /* Hide the checkbox */
+    display: none;
+    /* Hide the checkbox */
 }
 
 img {
@@ -70,7 +74,16 @@ img {
     padding: 10;
 }
 
-span{
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c3d0e5;
+    min-height: 50vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+span {
     padding: 2px 5px;
     /* Adds slight padding around text */
 }
