@@ -7,51 +7,62 @@
 </html>
 
 <body>
-    <div style="display: flex; justify-content: space-between;">
-        <div>
-            <span class="NavBar" style="color: #c3d0e5;"><img class="icon"
-                    src="https://code.visualstudio.com/assets/favicon.ico" alt="icon" width="20">Visual Studio
-                Code</span>
-            <span class="NavBar"><a class="links" href="/">Docs</a></span></span>
-            <span class="NavBar"><a class="links" href="/">Updates</a></span></span>
-            <span class="NavBar"><a class="links" href="/">Blog</a></span></span>
-            <span class="NavBar"><a class="links" href="/">API</a></span></span>
-            <span class="NavBar"><a class="links" href="/">Extensions</a></span>
-            <span class="NavBar"><a class="links" href="/">FAQs</a></span>
-            <span class="NavBar"><a class="links" href="/">GitHub Copilot</a></span>
-        </div>
-
-        <div>
-            <input type="text" placeholder="Search Docs">
-            <button>Download</button>
-        </div>
-
-    </div>
-    <br />
-    <input type="checkbox" id="close-banner" class="hide-checkbox">
-    <div id="banner" class="copilot-text">
-        <span class=" icon">🚀</span>Get<a href="/">GitHub Copilot Free</a>in VS Code!
-        <label for="close-banner" class="close">✖</label>
-    </div>
-    <section>
-        <div>
-            <h1 id="center-content">Your code editor. Redefined with AI.</h1>
-            <span class="outer-span">
-                <span>
-                    <button class="download-btn">Download for macOS</button>
+    <div class="container">
+        <div class="Nav">
+            <div>
+                <span class="NavBar" style="color: #c3d0e5;">
+                    <img class="icon" src="https://code.visualstudio.com/assets/favicon.ico" alt="icon" width="20">
+                   <b>Visual Studio Code</b>
                 </span>
-                <span>
-                    <button class="copilot-btn">Get Copilot Free</button>
-                </span>
-                <p>
-                    <a href="">Web</a>, <a href="">Insiders edition</a>, or <a href="">other platforms</a>
-                </p>
-                <p>
-                    By using VS Code, you agree to its license and privacy statement.
-                </p>
-            </span>
+                <span class="NavBar"><a class="links" href="/">Docs</a></span>
+                <span class="NavBar"><a class="links" href="/">Updates</a></span>
+                <span class="NavBar"><a class="links" href="/">Blog</a></span>
+                <span class="NavBar"><a class="links" href="/">API</a></span>
+                <span class="NavBar"><a class="links" href="/">Extensions</a></span>
+                <span class="NavBar"><a class="links" href="/">FAQs</a></span>
+                <span class="NavBar"><a class="links" href="/">GitHub Copilot</a></span>
+            </div>
+
+            <div>
+                <input type="text" placeholder="Search Docs">
+                <button>Download</button>
+            </div>
         </div>
 
-    </section>
-    <br />
+        <br />
+        
+        <input type="checkbox" id="close-banner" class="hide-checkbox">
+        <div id="banner" class="copilot-text">
+            <span class="icon">🚀</span>Get<a href="/">GitHub Copilot Free</a> in VS Code!
+            <label for="close-banner" class="close">✖</label>
+        </div>
+
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1 id="center-content">Your code editor. Redefined with AI.</h1>
+                <span class="outer-span">
+                    <span>
+                        <button class="download-btn">Download for macOS</button>
+                    </span>
+                    <span>
+                        <button class="copilot-btn">Get Copilot Free</button>
+                    </span>
+                    <p>
+                        <a href="">Web</a>, <a href="">Insiders edition</a>, or <a href="">other platforms</a>
+                    </p>
+                    <p>
+                        By using VS Code, you agree to its license and privacy statement.
+                    </p>
+                </span>
+            </div>
+            <div class="hero-section">
+                <video class="hero-video" autoplay muted loop>
+                    <source src="https://code.visualstudio.com/assets/home/hero-dark-lg.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </section>
+        
+    </div>
 </body>
