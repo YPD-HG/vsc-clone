@@ -1,3 +1,7 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 a {
     color: #4daafc;
     padding: 2px;
@@ -53,14 +57,26 @@ button:focus {
     margin: 0;
     /* Centers everything */
 }
-
+.download-btn {
+    background-color: #0078D4;
+    /* VS Code blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 .copilot-btn {
     background-color: #25292E;
     color: #c3d0e5;
     /* Light grayish-blue text */
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: 1px solid #c3d0e5;
     /* Border matching text color */
     border-radius: 6px;
@@ -70,8 +86,8 @@ button:focus {
 }
 
 .copilot-btn:hover {
-    background-color: #c3d0e5;
-    color: #0D1117;
+    background-color: #393D42;
+    color: #c3d0e5;
     /* Dark background for contrast */
 }
 
@@ -99,19 +115,6 @@ div {
     padding-right: 20px;
 }
 
-.download-btn {
-    background-color: #0078D4;
-    /* VS Code blue */
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.2s ease-in-out;
-}
 
 .download-btn:hover {
     background-color: #005ea6;
@@ -137,10 +140,9 @@ img {
 }
 
 .links {
+    text-decoration: none; /* Remove the underline */
     color: #9ba3b4;
 }
-
-
 
 .outer-span {
     display: inline-block;
@@ -183,13 +185,29 @@ span {
 }
 
 /*Navigation*/
+#company-name{
+    font-size: 20px;
+}
 .Nav {
     display: flex;
     justify-content: space-between;
-}
+    padding: 0 40px 0 20px; /* Add padding for more space */
+    align-items: center; /* Vertically centers both */
 
+}
+#Nav-left{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+#Nav-right{
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add some space between the items */
+    margin-left: 0px;
+}
 .Navbar {
-    padding: 10;
+    padding: 6;
+    color: rgb(155, 163, 180);
 }
 
 .download-btn-nav {
@@ -212,10 +230,10 @@ span {
     height: 32px;
     background-color: transparent;
     background: url('search-dark.svg') no-repeat left center;
-    background-size: 14px 14px; /* Icon size */
     background-position: 8px center; /* Adjusted position for the icon because padding shifts the content (the text), but not the background image. */  
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    border-width: 1px;
     padding: 8px 35px;
     padding-left: 35px; /* Increased padding to avoid overlap */
     font-size: 14px;
@@ -224,6 +242,10 @@ span {
 }
 #nav-search::placeholder {
     color: rgba(255, 255, 255, 0.6);
+}
+.theme-icon-light{
+    width: 20px;
+    height: 20px; 
 }
 /*Hero Containers*/
 
@@ -263,6 +285,7 @@ span {
 
 .hero-text {
     width: 100%;
+    margin-top: 35px;
     padding-bottom: 20px;
     /* Adds spacing before video */
 }

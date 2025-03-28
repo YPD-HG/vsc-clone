@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <div class="Nav">
-            <div>
-                <span class="NavBar" style="color: #c3d0e5;">
+            <div id="Nav-left">
+                <span class="NavBar" id="company-name" style="color: #c3d0e5;">
                     <img class="icon" src="favicon.ico" alt="icon" width="20">
                     <b>Visual Studio Code</b>
                 </span>
@@ -23,7 +23,8 @@
                 <span class="NavBar"><a class="links" href="/">GitHub Copilot</a></span>
             </div>
 
-            <div>
+            <div id="Nav-right">
+                <img class="theme-icon-light" src="theme-light.svg" alt="Switch to the dark theme">
                 <input id="nav-search" type="text" placeholder="Search Docs">
                 <button class="download-btn-nav">Download</button>
             </div>
@@ -33,7 +34,8 @@
 
         <input type="checkbox" id="close-banner" class="hide-checkbox">
         <div id="banner" class="copilot-text">
-            <span></span> <!-- Created this so that i can use flex's justify content's space between, since we need three element for that -->
+            <span></span>
+            <!-- Created this so that i can use flex's justify content's space between, since we need three element for that -->
             <span>
                 🚀 Get<a href="/">GitHub Copilot Free</a> in VS Code!
             </span>
