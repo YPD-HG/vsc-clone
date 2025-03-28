@@ -206,16 +206,21 @@ span {
     padding-right: 0px;
     margin-right: 0px;
     /* Adjust based on need */
-    background: url('https://code.visualstudio.com/assets/home/hero-background.webp') no-repeat center center/cover;
+    background: url('https://code.visualstudio.com/assets/home/hero-background.webp') center center/cover;
 }
 
-.hero-text,
 .hero-video {
-    width: 100%;
-    /* Makes both sections identical in width */
+    width: 1116px;
+    height: 707.36px;
+    border-radius: 12px;
+    margin-top: 60px;
+
+    /*Shadow*/
+    box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.36);
 }
 
 .hero-text {
+    width: 100%;
     padding-bottom: 20px;
     /* Adds spacing before video */
 }
