@@ -1,10 +1,24 @@
 a {
-    padding: 2px 5px;
+    color: #4daafc;
+    padding: 2px;
     /* Adds slight padding around text */
 }
 
 body {
     background-color: #0D1117;
+}
+
+button:focus {
+    outline: 2px solid #0078d4; /* Custom focus indicator */
+    border-radius: 4px;
+}
+
+#center-content{
+    font-size: 72px;
+    max-width: 1000px;
+    text-wrap: balance;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .close {
@@ -22,6 +36,23 @@ body {
 .close:hover {
     color: #fff;
     /* Highlight on hover */
+}
+.copilot-btn {
+    background-color: #25292E;
+    color: #c3d0e5; /* Light grayish-blue text */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #c3d0e5; /* Border matching text color */
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.copilot-btn:hover {
+    background-color: #c3d0e5;
+    color: #0D1117; /* Dark background for contrast */
 }
 
 .copilot-text {
@@ -46,6 +77,23 @@ div {
     margin-right: 30px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.download-btn {
+    background-color: #0078D4; /* VS Code blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: #005ea6; /* Darker blue on hover */
 }
 
 .hide-checkbox {
